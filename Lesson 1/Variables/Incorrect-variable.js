@@ -1,0 +1,10 @@
+let name = 'Alex'
+let name2 = 'name2'
+let __firstName = 'John'
+let last_name = 'LastName'
+let _ = true
+let i_am_an_error_too_delete_me = 'if you can'
+let iAmOneOfTheMostBiggestVariablesInThisWorld = 'Do not repeat this sh** at home'
+let $ = 1
+let $role = 'User'
+let weHave10VariablesHere = 'am i right?'
