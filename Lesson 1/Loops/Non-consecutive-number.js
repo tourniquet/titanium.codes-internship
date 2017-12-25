@@ -1,9 +1,1 @@
-const firstNonConsecutive = arr => {
-  let result
-
-  arr.map((el, i, arr) => {
-    if (arr[i+1] - arr[i] > 1) result = arr[i+1]
-  })
-
-  return result
-}
+const firstNonConsecutive = arr => arr.find((el, i, arr) => (arr[i] - arr[i-1]) !== 1 && !!i)

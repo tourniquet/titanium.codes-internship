@@ -1,13 +1,1 @@
-const evenLast = arr => {
-  let sum = 0
-
-  arr.filter((el, i, arr) => {
-    if (i % 2 === 0) {
-      sum += arr[i]
-    }
-  })
-
-  if (!sum) return 0
-
-  return sum * arr[arr.length - 1]
-}
+const evenLast = arr => arr.length ? arr.reduce((sum, val, i) => (i % 2 === 0) ? sum += val : sum) * arr[arr.length-1] : 0

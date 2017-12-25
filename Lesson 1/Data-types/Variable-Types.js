@@ -4,7 +4,7 @@ const thisIsNumber = 23
 // Variable "string" should have type "string"
 const thisIsString = 'string'
 
-//Variable "boolean" should have type "boolean"
+// Variable "boolean" should have type "boolean"
 const thisIsBoolean = true
 
 // Variable "object" should have type "object"

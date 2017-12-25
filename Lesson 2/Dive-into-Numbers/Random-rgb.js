@@ -1,5 +1,3 @@
-const randomColor = () => {
-  const rgb = () => (Math.random() * 255).toFixed()
+const rgb = () => (Math.random() * 255).toFixed()
 
-  return `rgb(${rgb()},${rgb()},${rgb()})`
-}
+const randomColor = () => `rgb(${rgb()},${rgb()},${rgb()})`
