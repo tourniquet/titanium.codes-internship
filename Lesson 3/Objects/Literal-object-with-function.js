@@ -5,5 +5,5 @@ const getLiteralObjectWithFunction = () => {
     }
   }
 
-  return container.getSquare()
+  return container
 }
