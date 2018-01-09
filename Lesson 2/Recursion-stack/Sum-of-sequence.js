@@ -1,9 +1,4 @@
 const sequenceSum = (begin, end, step) => {
-  let sum = 0
-
-  for (let i = begin; i <= end; i += step) {
-    sum += i
-  }
-
-  return sum
-}
+  const n = Math.floor((end - begin + step) / step);
+	return (n / 2) * (2 * begin + (n - 1) * step);
+};
