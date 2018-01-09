@@ -20,6 +20,6 @@ function threeDimensionalArr (arr) {
 //     return arr.reduce((sum, i) => sum += i).split(',').join('')
 //   } else {
 //     const b = a.filter(el => !isNaN(el)).map(el => Number(el))
-//     return b.reduce((sum, i) => sum += i)
+//     return b.reduce((sum, i) => sum + i)
 //   }
 // }

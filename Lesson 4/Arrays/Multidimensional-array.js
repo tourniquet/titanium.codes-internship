@@ -1,1 +1,1 @@
-const twoDimensionalArr = arr => [].concat.apply([], arr).reduce((sum, el) => sum += el)
+const twoDimensionalArr = arr => [].concat.apply([], arr).reduce((sum, el) => sum + el)
