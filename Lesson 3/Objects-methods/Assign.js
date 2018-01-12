@@ -10,13 +10,21 @@ var source = {
 var destination = {}
 
 const putToDestination = source => {
-  for (let key in source) {
-    if  (destination[key] === source[key]) continue
-    Object.defineProperty(destination, key, {
-      value: obj[key],
+  source.items.forEach(item => {
+    const [key] = Object.keys(item)
+
+    if (!destination.hasOwnProperty(source[key])) {
+      Object.defineProperty(destination, key, {
+        value: item[key],
+        enumerable: true
+      })
+    }
+  })
+
+  if (!destination.hasOwnProperty('divideEquall')) {
+    Object.defineProperty(destination, 'divideEqually', {
+      value: source.divideEqually,
       enumerable: true
     })
   }
-
-  return destination
 }

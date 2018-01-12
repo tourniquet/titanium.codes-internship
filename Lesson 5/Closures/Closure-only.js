@@ -1,0 +1,1 @@
+const closureOnly = x => () => x
